@@ -948,52 +948,14 @@ GameObject:
   - component: {fileID: 1863246246}
   - component: {fileID: 1863246245}
   - component: {fileID: 1863246244}
-  - component: {fileID: 1863246243}
-  - component: {fileID: 1863246242}
+  - component: {fileID: 1863246248}
   m_Layer: 0
-  m_Name: Cazador
+  m_Name: Personaje
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1863246242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863246241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6db0330ac2f9245b00399557b29793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControladorWaypoints
-  waypoints:
-  - {fileID: 1365833357}
-  - {fileID: 1739727602}
-  - {fileID: 1586722912}
-  - {fileID: 22320270}
-  - {fileID: 1577913401}
-  speed: 3
-  rotSpeed: 2
-  accuracy: 1
---- !u!114 &1863246243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863246241}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9142829dacc74ebf5ae295911f82c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PerseguirObjetivo
-  goal: {fileID: 650017562}
-  speed: 2
-  accuracy: 2
-  rotSpeed: 5
 --- !u!65 &1863246244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1086,6 +1048,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1863246248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863246241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc9142829dacc74ebf5ae295911f82c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PerseguirObjetivo
+  goal: {fileID: 1896337207}
+  speed: 2
+  accuracy: 0.01
+  rotSpeed: 5
 --- !u!1 &1887883412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,31 +1203,14 @@ GameObject:
   - component: {fileID: 1896337206}
   - component: {fileID: 1896337205}
   - component: {fileID: 1896337204}
-  - component: {fileID: 1896337203}
   - component: {fileID: 1896337208}
   m_Layer: 0
-  m_Name: Conejo
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1896337203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896337202}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbc9142829dacc74ebf5ae295911f82c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PerseguirObjetivo
-  goal: {fileID: 650017562}
-  speed: 2
-  accuracy: 2
-  rotSpeed: 5
 --- !u!65 &1896337204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1351,18 +1312,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896337202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6db0330ac2f9245b00399557b29793, type: 3}
+  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControladorWaypoints
-  waypoints:
-  - {fileID: 1365833357}
-  - {fileID: 1739727602}
-  - {fileID: 1586722912}
-  - {fileID: 22320270}
-  - {fileID: 1577913401}
-  speed: 3
-  rotSpeed: 2
-  accuracy: 1
+  m_EditorClassIdentifier: Assembly-CSharp::UnityStandardAssets.Utility.WaypointProgressTracker
+  circuit: {fileID: 0}
+  lookAheadForTargetOffset: 5
+  lookAheadForTargetFactor: 0.1
+  lookAheadForSpeedOffset: 10
+  lookAheadForSpeedFactor: 0.2
+  progressStyle: 0
+  pointToPointThreshold: 4
+  target: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

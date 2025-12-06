@@ -50,6 +50,10 @@ Local
 
 ![](docs/images/mov_rec_13.gif)
 
+## Ejercicio 10
+
+![](docs/images/mov_rec_14.gif)
+
 
 
 

@@ -30,3 +30,15 @@ Si pongo un vector goal muy grande (ej. 0, 0, 100), el objeto se mueve rapidísi
 
 ![](docs/images/mov_rec_8.gif)
 
+## Ejercicio 6
+
+Global
+![](docs/images/mov_rec_9.gif)
+
+Local
+![](docs/images/mov_rec_10.gif)
+
+## Ejercicio 7
+
+![](docs/images/mov_rec_11.gif)
+

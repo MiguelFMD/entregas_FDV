@@ -6,6 +6,12 @@ public class MovimientoTranslate : MonoBehaviour
 
     void Start()
     {
+        goal = goal * 0.5f;
+    }
+
+    private void Update()
+    {
         this.transform.Translate(goal);
+        
     }
 }

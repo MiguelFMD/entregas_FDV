@@ -542,6 +542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PerseguirObjetivo
   goal: {fileID: 650017562}
   speed: 2
+  accuracy: 2
+  rotSpeed: 5
 --- !u!65 &1896337204
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -42,3 +42,8 @@ Local
 
 ![](docs/images/mov_rec_11.gif)
 
+## Ejercicio 8
+
+![](docs/images/mov_rec_12.gif)
+
+

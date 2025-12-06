@@ -5,6 +5,7 @@ public class PerseguirObjetivo : MonoBehaviour
 {
     public Transform goal;
     public float speed = 2.0f;
+    public float accuracy = 0.01f;
 
     void Update()
     {
@@ -15,7 +16,7 @@ public class PerseguirObjetivo : MonoBehaviour
         
         this.transform.LookAt(goal.position);
 
-        if (direction.magnitude > 0.1f)
+        if (direction.magnitude > accuracy)
         {
             // Global
             // this.transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);

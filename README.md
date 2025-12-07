@@ -25,6 +25,10 @@
 
 ![](docs/images/sonido_6.gif)
 
+## Background music
+
+![](docs/images/sonido_7.gif)
+
 
 
 

@@ -29,6 +29,10 @@
 
 ![](docs/images/sonido_7.gif)
 
+## SFX, Musica, Ambiental
+
+![](docs/images/sonido_8.png)
+
 
 
 

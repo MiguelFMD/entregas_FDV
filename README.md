@@ -15,7 +15,7 @@
 
 ## Audio Mixer
 
-![](docs/images/sonido_4.png)
+![](docs/images/sonido_4.gif)
 
 ## Esfera moviendo
 

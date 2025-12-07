@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class CuboDeColores : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Color colorDelCubo = Color.white;
+    public float tamanoDelCubo = 1f;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Renderer miRenderer = GetComponent<Renderer>();
+        if (miRenderer != null)
+        {
+            miRenderer.material.color = colorDelCubo;
+        }
+        transform.localScale = Vector3.one * tamanoDelCubo;
     }
 }

@@ -1,10 +1,16 @@
 using UnityEngine;
 
-public class ScriptTarea1_2 : MonoBehaviour
+public class CuboDeColores : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        print("Script tarea 1.2");
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

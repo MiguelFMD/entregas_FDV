@@ -21,6 +21,10 @@
 
 ![](docs/images/sonido_5.gif)
 
+## Audio con colision
+
+![](docs/images/sonido_6.gif)
+
 
 
 

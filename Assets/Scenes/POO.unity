@@ -478,6 +478,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633092669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633092670}
+  - component: {fileID: 1633092672}
+  - component: {fileID: 1633092671}
+  m_Layer: 0
+  m_Name: CarruselManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633092670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633092669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.00107, y: 0, z: -9.10758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633092671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633092669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6c2d541407b684aa3dc2588bef676d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarruselSize
+  cubos:
+  - {fileID: 1923162134}
+  - {fileID: 1950193697}
+  - {fileID: 27534482}
+  - {fileID: 1730064762}
+  - {fileID: 1417301020}
+  sizes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1633092672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633092669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0604edbd9e04342b7434849a3e5445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarruselManagerColor
+  cubos:
+  - {fileID: 1923162134}
+  - {fileID: 1950193697}
+  - {fileID: 1730064762}
+  - {fileID: 1417301020}
+  - {fileID: 27534482}
+  colores:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 0, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &1730064762
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +683,7 @@ GameObject:
   - component: {fileID: 1923162136}
   - component: {fileID: 1923162135}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cubo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,3 +902,4 @@ SceneRoots:
   - {fileID: 27534486}
   - {fileID: 1730064766}
   - {fileID: 1417301024}
+  - {fileID: 1633092670}

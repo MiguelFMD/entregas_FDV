@@ -20,3 +20,7 @@
 
 ![](docs/images/poo_5.1.png)
 
+## El Carrusel de Colores
+
+![](docs/images/poo_6.gif)
+

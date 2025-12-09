@@ -4,17 +4,18 @@ public class ColorFantasma : MonoBehaviour
 {
     private Renderer rend;
 
-    public Color colorFinal = Color.red;
+    public Material materialFinal;
 
     void Start()
     {
+        rend = GetComponent<Renderer>();
     }
 
     void Update()
     {
         if (UnityEngine.InputSystem.Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            rend.material.color = colorFinal;
+            rend.material = materialFinal;
         }
     }
 }

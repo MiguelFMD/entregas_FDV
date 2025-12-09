@@ -15,3 +15,8 @@
 ## Errores de ejecución
 
 ![](docs/images/poo_4.png)
+
+## Error en la lógica del programa
+
+![](docs/images/poo_5.1.png)
+

@@ -10,7 +10,7 @@ public class PlayerHorizontalMovement : MonoBehaviour
     //Declarar la variable que representa el Rigidbody2D
     private Rigidbody2D rb2d;
 
-    [SerializeField] private float distanceToActivate = 3f;
+    private float distanceToActivate = 3f;
     private Animator animator;
     float horizontalInput = 0f;
 
@@ -40,7 +40,6 @@ public class PlayerHorizontalMovement : MonoBehaviour
         horizontalInput = left + right;
 
         PlayerFlip();
-        PlayerSetWalkAnimationByDistance();
     }
 
     private void FixedUpdate()
@@ -51,11 +50,11 @@ public class PlayerHorizontalMovement : MonoBehaviour
     private void PlayerFlip()
     {
         //Altero el flip del sprite según la dirección
-        if (horizontalInput > 0f)
+        if (horizontalInput < 0f)
         {
             spriteRenderer.flipX = true;
         }
-        else if (horizontalInput < 0f)
+        else if (horizontalInput > 0f)
         {
             spriteRenderer.flipX = false;
         }

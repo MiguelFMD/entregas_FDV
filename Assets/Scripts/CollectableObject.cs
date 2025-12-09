@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CollectableObject : MonoBehaviour
 {
-    [SerializeField] int points = 10;
+    [SerializeField] private int points = 10;
+    public UnityEvent onCollected;
     Animator animator;
     bool collected = false;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +22,7 @@ public class CollectableObject : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             collected = true;
+            onCollected.Invoke();
             // Logic for when the player collects the object
             Debug.Log("Collectable object collected!");
             animator.SetBool("Collected", true);
